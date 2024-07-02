@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="LightManager">
+    <Position X="5.5" Y="2.25" Width="2.25" />
+    <Members>
+      <Method Name="~LightManager" Hidden="true" />
+      <Field Name="emptyDirLight" Hidden="true" />
+      <Field Name="emptyPointLight" Hidden="true" />
+      <Field Name="emptySpotLight" Hidden="true" />
+      <Method Name="LightManager" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAMFQAQAAACAAAAAAACIAAgAAAAAABAAIAkACAIAAA=</HashCode>
+      <FileName>MOABE\LightManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Scene">
+    <Position X="1.25" Y="2.25" Width="2.25" />
+    <Members>
+      <Method Name="~Scene" Hidden="true" />
+      <Method Name="ActivateGodCam" Hidden="true" />
+      <Field Name="alarmMan" Hidden="true" />
+      <Field Name="camMan" Hidden="true" />
+      <Field Name="cmdBroker" Hidden="true" />
+      <Field Name="colMan" Hidden="true" />
+      <Method Name="Deregister" Hidden="true" />
+      <Method Name="Deregister2D" Hidden="true" />
+      <Method Name="Deregister3D" Hidden="true" />
+      <Method Name="DeregisterKey" Hidden="true" />
+      <Method Name="Draw" Hidden="true" />
+      <Field Name="drawMan" Hidden="true" />
+      <Method Name="Get2DCamera" Hidden="true" />
+      <Method Name="GetCollisionManager" Hidden="true" />
+      <Method Name="GetMainCamera" Hidden="true" />
+      <Method Name="Initialize" Hidden="true" />
+      <Field Name="keyMan" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Field Name="pGodCam" Hidden="true" />
+      <Method Name="Register" Hidden="true" />
+      <Method Name="Register2D" Hidden="true" />
+      <Method Name="Register3D" Hidden="true" />
+      <Method Name="RegisterKey" Hidden="true" />
+      <Method Name="ResetCollisionID" Hidden="true" />
+      <Method Name="Scene" Hidden="true" />
+      <Method Name="SceneEnd" Hidden="true" />
+      <Method Name="SetCollisionPair" Hidden="true" />
+      <Method Name="SetCollisionSelf" Hidden="true" />
+      <Method Name="SetCurrCamera2D" Hidden="true" />
+      <Method Name="SetCurrCamera3D" Hidden="true" />
+      <Method Name="SetCurrCameraPos" Hidden="true" />
+      <Method Name="SetDefaultCameraAsCurr" Hidden="true" />
+      <Method Name="SubmitRegistrationCommand" Hidden="true" />
+      <Method Name="Update" Hidden="true" />
+      <Method Name="UpdateCurrCamera" Hidden="true" />
+      <Field Name="updateMan" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AARAEhAMAAAQAwQYkAoBIBAAQAATEEElQAAghCAAAEY=</HashCode>
+      <FileName>MOABE\Scene.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="lightMan" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

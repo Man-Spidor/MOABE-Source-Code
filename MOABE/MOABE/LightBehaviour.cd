@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MOABELight">
+    <Position X="10.75" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="~MOABELight" Hidden="true" />
+      <Method Name="GetLightNum" Hidden="true" />
+      <Field Name="lightID" Hidden="true" />
+      <Method Name="MOABELight" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="RegisterLight" Hidden="true" />
+      <Field Name="regStatus" Hidden="true" />
+      <Method Name="SetAmbDifSpec" Hidden="true" />
+      <Method Name="SetColor" Hidden="true" />
+      <Method Name="SetLightNum" Hidden="true" />
+      <Method Name="SetRegStatusDeregistered" Hidden="true" />
+      <Method Name="SetRegStatusRegistered" Hidden="true" />
+      <Method Name="TurnOff" Hidden="true" />
+      <Method Name="TurnOn" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>ABAAEAgAQAAAAACGyAECAAAAAAASiCgAQAikBAAAECA=</HashCode>
+      <FileName>MOABE\MOABELight.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="pBehaviour" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MOABESpotLight">
+    <Position X="8.25" Y="5" Width="1.5" />
+    <Members>
+      <Method Name="~MOABESpotLight" Hidden="true" />
+      <Method Name="MOABESpotLight" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Field Name="pDeRegCmd" Hidden="true" />
+      <Field Name="pRegCmd" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>ABADkAiCACAICAAEwBAAAAAAAAAAipAAQACkBAACACA=</HashCode>
+      <FileName>MOABE\MOABESpotLight.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MOABEPointLight">
+    <Position X="10.75" Y="5" Width="1.5" />
+    <Members>
+      <Method Name="~MOABEPointLight" Hidden="true" />
+      <Method Name="MOABEPointLight" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Field Name="pDeRegCmd" Hidden="true" />
+      <Field Name="pRegCmd" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>ABAAEggCACAACAAEwQAAAAAAIAAAioAgQAAkBAAAAAA=</HashCode>
+      <FileName>MOABE\MOABEPointLight.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MOABEDirectionalLight">
+    <Position X="13.25" Y="4.75" Width="1.5" />
+    <Members>
+      <Method Name="~MOABEDirectionalLight" Hidden="true" />
+      <Method Name="MOABEDirectionalLight" Hidden="true" />
+      <Field Name="OFF_VECT" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Field Name="pDeRegCmd" Hidden="true" />
+      <Field Name="pRegCmd" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>ABAAGAiCAAAAAAAExCAAQAAAAAAAiAAAQAAsBAAAACQ=</HashCode>
+      <FileName>MOABE\MOABEDirectionalLight.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LightBehaviourCommand">
+    <Position X="1.5" Y="0.75" Width="2" />
+    <Members>
+      <Method Name="~LightBehaviourCommand" Hidden="true" />
+      <Method Name="LightBehaviourCommand" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="LightBehaviourCommand::BehaviourStrategy" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>MOABE\LightBehaviourCommand.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="LightBehaviourCommand::StoppedBehaviour" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>MOABE\LightBehaviourCommand.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="LightBehaviourCommand::NormalBehaviour" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>MOABE\LightBehaviourCommand.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="LightBehaviourCommand::BehaviourStrategies" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>MOABE\LightBehaviourCommand.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAUAACAAAAIAAAAAQIAAAAAAAAgAAAAQwQ=</HashCode>
+      <FileName>MOABE\LightBehaviourCommand.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LightStaticCmd">
+    <Position X="1.75" Y="12.25" Width="1.5" />
+    <Members>
+      <Method Name="~LightStaticCmd" Hidden="true" />
+      <Method Name="LightStaticCmd" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="LightBehaviourCommand" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.5" Y="7.009" />
+        <Point X="2.5" Y="12.126" />
+        <Point X="2.5" Y="12.126" />
+        <Point X="2.5" Y="12.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAACAAAAAAIAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>MOABE\LightStaticCmd.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PointLightTrackingCmd">
+    <Position X="0.5" Y="8" Width="1.5" />
+    <Members>
+      <Method Name="~PointLightTrackingCmd" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="PointLightTrackingCmd" Hidden="true" />
+    </Members>
+    <AssociationLine Name="Light" Type="MOABEPointLight" ManuallyRouted="true">
+      <Path>
+        <Point X="1.516" Y="8" />
+        <Point X="1.516" Y="11.804" />
+        <Point X="2.417" Y="11.804" Type="JumpStart" />
+        <Point X="2.583" Y="11.804" Type="JumpEnd" />
+        <Point X="10.229" Y="11.804" />
+        <Point X="10.229" Y="6.708" />
+        <Point X="10.75" Y="6.708" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAACAgAAAggAwAAAAAAAAAAAgAABAAAA=</HashCode>
+      <FileName>MOABE\PointLightTrackingCmd.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Light" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpotLightTrackingCmd">
+    <Position X="3.25" Y="8" Width="1.5" />
+    <Members>
+      <Method Name="~SpotLightTrackingCmd" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="SpotLightTrackingCmd" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAgQAAAAAAECAAABAggAAgABAAAAAAAAgAQAAAAA=</HashCode>
+      <FileName>MOABE\SpotLightTrackingCmd.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Light" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LightAlarm">
+    <Position X="6" Y="5.25" Width="1.5" />
+    <Members>
+      <Method Name="~LightAlarm" Hidden="true" />
+      <Method Name="LightAlarm" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>CAAAAgAAAAAAAAIAABAAEAAAAAAAAAAAAABgAAAAQAA=</HashCode>
+      <FileName>MOABE\LightAlarm.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="BehaviourCallback" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Alarmable" Collapsed="true">
+    <Position X="6" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QACAAAAAQAAUAAACABAAAAAIBBAAAAAAAABgAAAAAAA=</HashCode>
+      <FileName>MOABE\Alarmable.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
